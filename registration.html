@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Регистрация — Моя семья — мой космос</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header class="site-header container">
+    <a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+  </header>
+  <main class="container">
+    <h1>Регистрация участника</h1>
+    <form class="registration-form" novalidate>
+      <label>E-mail<input type="email" name="email" required></label>
+      <label>Имя<input type="text" name="firstName" required></label>
+      <label>Фамилия<input type="text" name="lastName" required></label>
+
+      <div class="age-row">
+        <label>Возраст (число)<input type="number" name="age_num" min="1" max="120" required></label>
+        </label>
+      </div>
+
+      <label>Пол
+        <select name="gender" required>
+          <option value="">Выберите</option>
+          <option value="male">мужской</option>
+          <option value="female">женский</option>
+        </select>
+      </label>
+
+      <label>Пароль<input type="password" name="password" minlength="8" required></label>
+      <label>Повтор пароля<input type="password" name="password2" minlength="8" required></label>
+
+      <label>Семейная фотография<input type="file" name="family_photo" accept="image/*" required></label>
+
+      <label class="consent"><input type="checkbox" name="consent" required>Согласие на обработку персональных данных</label>
+
+      <fieldset class="family-members">
+        <legend>Члены семьи</legend>
+        <div class="member-row">
+          <label>Фамилия<input type="text" name="member_lastname[]"></label>
+          <label>Имя<input type="text" name="member_firstname[]"></label>
+          <label>Возраст<input type="number" name="member_age[]"></label>
+          <label>Пол<select name="member_gender[]"><option>мужской</option><option>женский</option></select></label>
+          <div class="member-actions"><button type="button">Добавить</button><button type="button">Удалить</button></div>
+        </div>
+      </fieldset>
+
+      <div class="messages">
+        <div class="msg success" hidden>Регистрация прошла успешно.</div>
+        <div class="msg error" hidden>Ошибка: заполните все обязательные поля.</div>
+      </div>
+
+      <button type="submit" class="btn">Зарегистрироваться</button>
+    </form>
+  </main>
+</body>
+</html>
