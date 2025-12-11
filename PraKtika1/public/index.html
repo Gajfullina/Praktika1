@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Моя семья — мой космос</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index-light.html" class="logo" aria-label="Главная">
+        <img src="assets/img/logo.png" alt="Моя семья — мой космос" />
+      </a>
+
+      <nav class="main-nav" aria-label="Главное меню">
+        <ul>
+          <li><a href="registration.html">Регистрация</a></li>
+          <li><a href="#auth">Авторизация</a></li>
+          <li><a href="account.html">Личный кабинет</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#competitions">Конкурсы</a></li>
+          <li><a href="#search">Поиск</a></li>
+          <li><a href="#footer">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" aria-pressed="false" title="Переключить тему">🌙 / ☀️</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Слайдер (декоративно) -->
+    <section class="hero-slider container">
+      <article class="slide active">
+         <img src="assets/img/dut.jpg" alt="Звёздный театр" class="slide-img">
+         <div class="slide-info">
+           <h2>Планетарий</h2>
+           <p>Краткое описание конкурса — яркие номера, семейные постановки.</p>
+           <div class="rating" aria-hidden="true">
+             <span class="stars">★★★★☆</span>
+             <span class="rating-value">4.8</span>
+           </div>
+           <a class="btn" href="competition.html">Подробнее</a>
+         </div>
+      </article>
+      <div class="slider-controls" aria-hidden="true">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <!-- Авторизация -->
+    <section id="auth" class="auth-block container">
+      <form class="login-form" novalidate>
+         <h3>Вход</h3>
+         <label>Email<input type="email" name="email" required></label>
+         <label>Пароль<input type="password" name="password" required></label>
+         <div class="actions">
+           <button type="submit" class="btn">Войти</button>
+           <a href="#" class="link-small">Забыли пароль?</a>
+         </div>
+      </form>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="about container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h3>О нас</h3>
+       Фонд "Моя семья — мой космос" организует семейные конкурсы и фестивали с 2018 года. Наша миссия — сделать искусство и творчество доступным для всей семьи. Мы проводим мероприятия, где дети и родители могут выступать вместе, учиться и веселиться.
+        </div>
+        <div class="about-media">
+          <img src="assets/img/planeta13.jpg" alt="О нас">
+        </div>
+      </div>
+    </section>   
+
+    <!-- Конкурсы -->
+    <section id="competitions" class="competitions container">
+      <h3>Конкурсы</h3>
+      <div class="competitions-grid">
+        <!-- 2 карточки -->
+        <article class="contest-card">
+          <img src="assets/img/plan1.jpg" alt="Планетарий">
+          <h4>Планетарий</h4>
+          <p class="short">Семейные постановки и космические номера.</p>
+          <div class="card-meta"><span>Записей: 15</span><span>Рейтинг: ★★★★☆</span></div>
+          <a href="registration.html" class="btn">Записаться</a>
+        </article>
+        <article class="contest-card">
+          <img src="assets/img/plan2.jpg" alt="Космическая семья">
+          <h4>Космическая семейка</h4>
+          <p class="short">Фото- и творческий конкурс для семей.</p>
+          <div class="card-meta"><span>Записей: 9</span><span>Рейтинг: ★★★★☆</span></div>
+          <a href="registration.html" class="btn">Записаться</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Поиск -->
+    <section id="search" class="search container">
+      <h3>Быстрый поиск</h3>
+      <form class="search-form">
+        <input type="search" placeholder="Введите название или описание конкурса" aria-label="Поиск" />
+        <button class="btn" type="submit">Поиск</button>
+      </form>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="feedback container">
+      <h3>Отзывы</h3>
+      <div class="feedback-slider">
+        <!-- слайд -->
+        <article class="feedback-item">
+          <img src="assets/img/git.jpg" alt="Виталий">
+          <div class="feedback-meta"><strong>Виталий</strong> <time>12.06.2024</time></div>
+          <p>Отличный опыт! Вовлекли всю семью.</p>
+          <a href="competition.html">Подробнее о конкурсе</a>
+        </article>
+       Алексей — "Замечательная организация, дети в восторге." — 12.06.2024
+Елена — "Отличный формат для всей семьи." — 05.06.2024
+      </div>
+    </section>
+
+    <!-- Подписка -->
+    <section class="subscribe container">
+      <h3>Подписка на новости</h3>
+      <form class="subscribe-form">
+        <label>Email<input type="email" required placeholder="you@example.com"></label>
+        <label class="consent"><input type="checkbox" required>Согласен на обработку персональных данных</label>
+        <button class="btn" type="submit">Подписаться</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="tel:+74842234567">+7 (9812) 23-55-34</a><br>
+        <a href="mailto:family@cosmos.ru">family64@cosmos.ru</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="index-light.html">Главная-светлая</a></li>
+          <li><a href="registration.html">Регистрация</a></li>
+          <li><a href="competition.html">Конкурс</a></li>
+          <li><a href="account.html">Личный кабинет</a></li>
+          <li><a href="404.html">404</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

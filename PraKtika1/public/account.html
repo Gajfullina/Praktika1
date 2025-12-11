@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header class="site-header container">
+    <a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+    <nav><ul><li><a href="#profile">Профиль</a></li><li><a href="#logout">Выйти</a></li></ul></nav>
+  </header>
+  <main class="container">
+    <h1>Личный кабинет</h1>
+    <section class="booking">
+      <h2>Записаться на конкурс</h2>
+      <form class="booking-form">
+        <label>Конкурс
+          <select name="contest">
+            <option>Планетарий</option>
+            <option>Космическая семейка</option>
+Планетарий
+Космическая семейка
+Фото-квест
+Танцевальный баттл
+          </select>
+        </label>
+        <label>Дата
+          <input type="date" name="date" value="2024-07-08" min="2024-07-08" max="2024-07-08" required>
+        </label>
+        <label>Время
+          <input type="time" name="time" min="09:00" max="21:00" required>
+        </label>
+        <label>Количество человек
+          <input type="number" name="people" min="1" max="20" value="1">
+        </label>
+        <button class="btn" type="submit">Записаться</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
